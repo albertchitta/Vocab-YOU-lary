@@ -1,7 +1,7 @@
 {
-  "name": "webpack-5.0-template",
+  "name": "vocab-you-lary",
   "version": "1.0.0",
-  "description": "",
+  "description": "An application that allows users to CRUD vocabulary cards, authenticate with Google, and filter.",
   "main": "src/scripts/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,7 +9,7 @@
     "build": "webpack --mode production"
   },
   "keywords": [],
-  "author": "",
+  "author": "Albert Chittaphong",
   "license": "ISC",
   "devDependencies": {
     "css-loader": "^6.2.0",
