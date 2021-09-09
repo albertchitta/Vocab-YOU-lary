@@ -1,17 +1,19 @@
 import addVocabForm from '../components/forms/addVocabForm';
+import { showVocab } from '../components/vocab';
+import { getVocab } from '../helpers/data/vocabData';
 import signOut from '../helpers/signOut';
 
 // NAVIGATION EVENTS
-const navigationEvents = () => {
+const navigationEvents = (uid) => {
   // LOGOUT BUTTON
   document.querySelector('#logout-button').addEventListener('click', signOut);
 
+  // VOCAB-YOU-LARY HOME
+  document.querySelector('#home').addEventListener('click', () => {
+    getVocab(uid).then(showVocab);
+  });
+
   // CREATE AN ENTRY
-  // document.querySelector('#navigation').addEventListener('click', (e) => {
-  //   if (e.target.id.includes('create-entry')) {
-  //     addVocabForm();
-  //   }
-  // });
   document.querySelector('#create-entry').addEventListener('click', addVocabForm);
 };
 
