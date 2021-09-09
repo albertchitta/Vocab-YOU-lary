@@ -2,7 +2,7 @@ const navBar = () => {
   document.querySelector('#navigation').innerHTML = `
     <nav class="navbar navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a id="home" class="navbar-brand" href="#">
           <img src="/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
           Vocab-YOU-lary
         </a>
@@ -15,6 +15,7 @@ const navBar = () => {
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success" type="submit">Search</button>
         </form>
+        <div id="logout-button"></div>
       </div>
     </nav>
   `;
