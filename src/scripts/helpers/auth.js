@@ -13,7 +13,7 @@ const checkLoginStatus = () => {
     } else {
       // person is NOT logged in
       document.querySelector('#welcome').innerHTML = `
-        <h1>Welcome to Vocab-YOU-lary!</h1>
+        <h1 class="banner">Welcome to Vocab-YOU-lary!</h1>
       `;
       loginButton();
     }

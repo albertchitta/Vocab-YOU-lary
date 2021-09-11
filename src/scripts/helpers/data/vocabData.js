@@ -1,14 +1,24 @@
 // API CALLS FOR BOOKS
 import axios from 'axios';
 import firebaseConfig from '../../../api/apiKeys';
+// import { getSingleCategory } from './categoryData';
 
 const dbUrl = firebaseConfig.databaseURL;
 
 // GET VOCAB
-const getVocab = () => new Promise((resolve, reject) => {
-  axios.get(`${dbUrl}/vocab.json`)
+const getVocab = (userId) => new Promise((resolve, reject) => {
+  axios.get(`${dbUrl}/vocab.json?orderBy="uid"&equalTo="${userId}"`)
     .then((response) => resolve(Object.values(response.data)))
     .catch((error) => reject(error));
+});
+
+// GET FILTERED VOCAB
+const getFilteredVocab = (userId, category) => new Promise((resolve, reject) => {
+  getVocab(userId)
+    .then((filteredVocabArray) => {
+      const filteredVocab = filteredVocabArray.filter((vocab) => vocab.category === category);
+      resolve(filteredVocab);
+    }).catch(reject);
 });
 
 // GET SINGLE VOCAB
@@ -22,7 +32,9 @@ const getSingleVocab = (firebaseKey) => new Promise((resolve, reject) => {
 const createVocab = (vocabObj) => new Promise((resolve, reject) => {
   axios.post(`${dbUrl}/vocab.json`, vocabObj)
     .then((response) => {
-      const body = { firebaseKey: response.data.name };
+      const body = {
+        firebaseKey: response.data.name,
+      };
       axios.patch(`${dbUrl}/vocab/${response.data.name}.json`, body)
         .then(() => {
           getVocab(vocabObj.uid).then(resolve);
@@ -51,5 +63,6 @@ export {
   getSingleVocab,
   createVocab,
   updateVocab,
-  deleteVocab
+  deleteVocab,
+  getFilteredVocab
 };

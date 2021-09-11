@@ -4,7 +4,8 @@ import {
   createVocab,
   getSingleVocab,
   updateVocab,
-  deleteVocab
+  deleteVocab,
+  getFilteredVocab
 } from '../helpers/data/vocabData';
 
 const domEvents = (uid) => {
@@ -15,7 +16,7 @@ const domEvents = (uid) => {
       const vocabObject = {
         title: document.querySelector('#title').value,
         definition: document.querySelector('#definition').value,
-        category_id: document.querySelector('#category_id').value,
+        category: document.querySelector('#category').value,
         uid
       };
 
@@ -33,7 +34,7 @@ const domEvents = (uid) => {
       const vocabObject = {
         title: document.querySelector('#title').value,
         definition: document.querySelector('#definition').value,
-        category_id: document.querySelector('#category_id').value,
+        category: document.querySelector('#category').value,
         firebaseKey,
         uid
       };
@@ -49,6 +50,14 @@ const domEvents = (uid) => {
         deleteVocab(uid, firebaseKey).then(showVocab);
       }
     }
+
+    // CLICK EVENT FOR FILTERING VOCAB BY CATEGORY
+    document.querySelector('#filter-container').addEventListener('click', (event) => {
+      if (event.target.id.includes('sort')) {
+        const [, category] = event.target.id.split('--');
+        getFilteredVocab(uid, category).then(showVocab);
+      }
+    });
   });
 };
 
