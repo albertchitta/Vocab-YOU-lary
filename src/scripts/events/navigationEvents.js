@@ -1,6 +1,6 @@
 import addVocabForm from '../components/forms/addVocabForm';
 import { showVocab } from '../components/vocab';
-import { getVocab } from '../helpers/data/vocabData';
+import { getSearchedVocab, getVocab } from '../helpers/data/vocabData';
 import signOut from '../helpers/signOut';
 
 // NAVIGATION EVENTS
@@ -15,6 +15,12 @@ const navigationEvents = (uid) => {
 
   // CREATE AN ENTRY
   document.querySelector('#create-entry').addEventListener('click', addVocabForm);
+
+  // SEARCH VOCAB
+  document.querySelector('#search-btn').addEventListener('click', () => {
+    const string = document.querySelector('#searchBar').value;
+    getSearchedVocab(uid, string).then(showVocab);
+  });
 };
 
 export default navigationEvents;

@@ -21,6 +21,15 @@ const getFilteredVocab = (userId, category) => new Promise((resolve, reject) => 
     }).catch(reject);
 });
 
+// GET SEARCHED VOCAB
+const getSearchedVocab = (userId, string) => new Promise((resolve, reject) => {
+  getVocab(userId)
+    .then((filteredVocabArray) => {
+      const filteredVocab = filteredVocabArray.filter((vocab) => vocab.category.toLowerCase().includes(string) || vocab.title.toLowerCase().includes(string) || vocab.definition.toLowerCase().includes(string));
+      resolve(filteredVocab);
+    }).catch(reject);
+});
+
 // GET SINGLE VOCAB
 const getSingleVocab = (firebaseKey) => new Promise((resolve, reject) => {
   axios.get(`${dbUrl}/vocab/${firebaseKey}.json`)
@@ -64,5 +73,6 @@ export {
   createVocab,
   updateVocab,
   deleteVocab,
-  getFilteredVocab
+  getFilteredVocab,
+  getSearchedVocab
 };
