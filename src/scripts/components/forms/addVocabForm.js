@@ -1,5 +1,4 @@
 import clearDom from '../../helpers/data/clearDom';
-import selectCategory from './selectCategory';
 
 const addVocabForm = (userId, obj = {}) => {
   clearDom();
@@ -15,6 +14,14 @@ const addVocabForm = (userId, obj = {}) => {
         <textarea class="form-control" placeholder="Enter a definition" id="definition" style="height: 100px" required>${obj.definition || ''}</textarea>
       </div>
       <div class="form-group" id="select-category">
+        <label for="category">Category</label>
+        <select class="form-control form-select" id="category" required>
+          <option value="" disabled selected>${obj.category || 'Select a category'}</option>
+          <option value="CSS">CSS</option>
+          <option value="Firebase">Firebase</option>
+          <option value="HTML">HTML</option>
+          <option value="Javascript">Javascript</option>
+        </select>
       </div>
       <button type="submit"
         id="${obj.firebaseKey ? `update-vocab--${obj.firebaseKey}` : 'submit-vocab'}"
@@ -22,8 +29,6 @@ const addVocabForm = (userId, obj = {}) => {
       </button>
     </form>
   `;
-
-  selectCategory(userId, `${obj.category_id || ''}`);
 };
 
 export default addVocabForm;
