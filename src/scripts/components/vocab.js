@@ -7,17 +7,17 @@ const emptyVocab = () => {
 const showVocab = (array) => {
   clearDom();
 
+  // FILTER BUTTONS
+  document.querySelector('#filter-container').innerHTML = `
+    <button type="button" class="btn btn-primary" id="sort--CSS">CSS</button>
+    <button type="button" class="btn btn-primary" id="sort--Firebase">Firebase</button>
+    <button type="button" class="btn btn-primary" id="sort--HTML">HTML</button>
+    <button type="button" class="btn btn-primary" id="sort--Javascript">Javascript</button>
+  `;
+
   if (array.length === 0) {
     emptyVocab();
   } else {
-    // FILTER BUTTONS
-    document.querySelector('#filter-container').innerHTML = `
-      <button type="button" class="btn btn-primary" id="sort--CSS">CSS</button>
-      <button type="button" class="btn btn-primary" id="sort--Firebase">Firebase</button>
-      <button type="button" class="btn btn-primary" id="sort--HTML">HTML</button>
-      <button type="button" class="btn btn-primary" id="sort--Javascript">Javascript</button>
-    `;
-
     array.forEach((item) => {
       document.querySelector('#vocab-container').innerHTML += `
         <div class="card" style="width: 18rem;">
