@@ -1,12 +1,15 @@
 import addVocabForm from '../components/forms/addVocabForm';
+import { sortByName, sortNewestToOldest, sortOldestToNewest } from '../components/sort';
 import { showVocab } from '../components/vocab';
 import {
   createVocab,
   getSingleVocab,
   updateVocab,
   deleteVocab,
-  getFilteredVocab
+  getFilteredVocab,
+  getVocab
 } from '../helpers/data/vocabData';
+import { getDate, getTime, getUTCTime } from '../helpers/date';
 
 const domEvents = (uid) => {
   document.querySelector('#main-container').addEventListener('click', (e) => {
@@ -17,6 +20,8 @@ const domEvents = (uid) => {
         title: document.querySelector('#title').value,
         definition: document.querySelector('#definition').value,
         category: document.querySelector('#category').value,
+        time: `${getDate()} @ ${getTime()}`,
+        utcTime: getUTCTime(),
         uid
       };
 
@@ -26,7 +31,7 @@ const domEvents = (uid) => {
     // CLICK EVENT FOR EDITING/UPDATING A VOCAB
     if (e.target.id.includes('edit')) {
       const [, firebaseKey] = e.target.id.split('--');
-      getSingleVocab(firebaseKey).then((vocabObject) => addVocabForm(uid, vocabObject));
+      getSingleVocab(firebaseKey).then((vocabObject) => addVocabForm(vocabObject));
     }
     if (e.target.id.includes('update-vocab')) {
       e.preventDefault();
@@ -35,6 +40,8 @@ const domEvents = (uid) => {
         title: document.querySelector('#title').value,
         definition: document.querySelector('#definition').value,
         category: document.querySelector('#category').value,
+        time: `${getDate()} @ ${getTime()}`,
+        utcTime: getUTCTime(),
         firebaseKey,
         uid
       };
@@ -52,12 +59,31 @@ const domEvents = (uid) => {
     }
 
     // CLICK EVENT FOR FILTERING VOCAB BY CATEGORY
-    document.querySelector('#filter-container').addEventListener('click', (event) => {
-      if (event.target.id.includes('sort')) {
-        const [, category] = event.target.id.split('--');
-        getFilteredVocab(uid, category).then(showVocab);
-      }
-    });
+    if (e.target.id.includes('filter--')) {
+      const [, category] = e.target.id.split('--');
+      getFilteredVocab(uid, category).then(showVocab);
+    }
+
+    // CLICK EVENT FOR SORTING VOCAB BY NAME
+    if (e.target.id === 'sort-name') {
+      getVocab(uid).then((array) => {
+        showVocab(sortByName(array));
+      });
+    }
+
+    // CLICK EVENT FOR SORTING VOCAB BY NEWEST TO OLDEST
+    if (e.target.id === 'sort-newest') {
+      getVocab(uid).then((array) => {
+        showVocab(sortNewestToOldest(array));
+      });
+    }
+
+    // CLICK EVENT FOR SORTING VOCAB BY OLDEST TO NEWEST
+    if (e.target.id === 'sort-oldest') {
+      getVocab(uid).then((array) => {
+        showVocab(sortOldestToNewest(array));
+      });
+    }
   });
 };
 

@@ -1,6 +1,6 @@
 import clearDom from '../../helpers/data/clearDom';
 
-const addVocabForm = (userId, obj = {}) => {
+const addVocabForm = (obj = {}) => {
   clearDom();
 
   document.querySelector('#form-container').innerHTML = `
