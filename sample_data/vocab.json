@@ -1,47 +1,100 @@
 {
   "-Mj6op_Uo2QOZ0XzSvTD" : {
     "category" : "Javascript",
-    "definition" : "In computer programming, asynchronous operation means that a process operates independently of other processes, whereas synchronous operation means that the process runs only as a result of some other process being completed or handed off.",
+    "definition" : "API stands for Application Programming Interface. An API enables two different programs to communicate with each other by making some parts of the website code available to developers. Developers can use this code, i.e. the API, to build tools and widgets that can be connected to that particular website. A classic example is the Facebook API, which enables apps like Facebook Messenger and Words with Friends.",
     "firebaseKey" : "-Mj6op_Uo2QOZ0XzSvTD",
-    "title" : "Asynchronous Programming",
     "time" : "9/11/2021 @ 11:30 AM",
-    "utcTime" : 1631413603980,
-    "uid" : "3Pex9U2lzjfFWSkFXq1BPI6YoIf2"
+    "title" : "API",
+    "uid" : "3Pex9U2lzjfFWSkFXq1BPI6YoIf2",
+    "utcTime" : 1631413603980
   },
   "-Mj6pVmvWLfhdxq_qasa" : {
-    "category" : "HTML",
-    "definition" : "In computer programming, asynchronous operation means that a process operates independently of other processes, whereas synchronous operation means that the process runs only as a result of some other process being completed or handed off.",
+    "category" : "CSS",
+    "definition" : "CSS stands for Cascading Style Sheets. It is a markup language responsible for the visual elements of a website. HTML (another markup language) is used to determine the structure and content of the webpage. Web developers will then use CSS to style this content; in other words, CSS tells the browser how the HTML elements should be displayed. CSS is used to apply colors and to determine font, text size and alignment, to name just a few.",
     "firebaseKey" : "-Mj6pVmvWLfhdxq_qasa",
-    "title" : "Asynchronous Programming",
     "time" : "9/11/2021 @ 11:31 AM",
-    "utcTime" : 1631413603981,
-    "uid" : "3Pex9U2lzjfFWSkFXq1BPI6YoIf2"
+    "title" : "CSS",
+    "uid" : "3Pex9U2lzjfFWSkFXq1BPI6YoIf2",
+    "utcTime" : 1631413603981
   },
   "-Mj6pe2C9TnH916dl-FL" : {
     "category" : "Javascript",
-    "definition" : "In computer programming, asynchronous operation means that a process operates independently of other processes, whereas synchronous operation means that the process runs only as a result of some other process being completed or handed off.",
+    "definition" : "A crucial aspect of development and programming, data structures are a way of organizing and storing data for maximum efficiency—much like books in a library. Data structures make it easy to find, access, sort, insert and delete data. There are many different types of data structures, including linked lists, stacks, queues and sets.",
     "firebaseKey" : "-Mj6pe2C9TnH916dl-FL",
-    "title" : "Asynchronous Programming",
     "time" : "9/11/2021 @ 11:32 AM",
-    "utcTime" : 1631413603982,
-    "uid" : "3Pex9U2lzjfFWSkFXq1BPI6YoIf2"
+    "title" : "Data Structures",
+    "uid" : "3Pex9U2lzjfFWSkFXq1BPI6YoIf2",
+    "utcTime" : 1631413603982
   },
   "-Mj6pqSOu9LE2RsB81Rp" : {
     "category" : "HTML",
-    "definition" : "In computer programming, asynchronous operation means that a process operates independently of other processes, whereas synchronous operation means that the process runs only as a result of some other process being completed or handed off.",
-    "firebaseKey" : "-Mj6pqSOu9LE2RsB81Rp",
-    "title" : "Asynchronous Programming",
+    "definition" : "HTML stands for Hypertext Markup Language. Simply put, it’s a computer language used to create websites. HTML describes how a document  should be displayed by an internet browser as a webpage. It consists of tags, elements and attributes and, once you’ve got the hang of it, is pretty simple to work with!",
     "time" : "9/11/2021 @ 11:33 AM",
-    "utcTime" : 1631413603983,
-    "uid" : "3Pex9U2lzjfFWSkFXq1BPI6YoIf2"
+    "title" : "HTML",
+    "uid" : "3Pex9U2lzjfFWSkFXq1BPI6YoIf2",
+    "utcTime" : 1631413603983
   },
   "-Mj6pwF_VlngNyREDgq4" : {
     "category" : "CSS",
-    "definition" : "In computer programming, asynchronous operation means that a process operates independently of other processes, whereas synchronous operation means that the process runs only as a result of some other process being completed or handed off.",
+    "definition" : "Bootstrap is a free, open-source frontend framework for designing websites and web apps. It was developed by Mark Otto and Jacob Thornton at Twitter in order to encourage consistency across internal tools. Bootstrap includes HTML and CSS-based design templates for typography, forms, buttons, tables, navigation, modals and more, plus JavaScript plugins.",
     "firebaseKey" : "-Mj6pwF_VlngNyREDgq4",
-    "title" : "Asynchronous Programming",
     "time" : "9/11/2021 @ 11:49 AM",
-    "utcTime" : 1631413603984,
-    "uid" : "3Pex9U2lzjfFWSkFXq1BPI6YoIf2"
+    "title" : "Bootstrap",
+    "uid" : "3Pex9U2lzjfFWSkFXq1BPI6YoIf2",
+    "utcTime" : 1631413603984
+  },
+  "-MjRfyelJTlOSKnShyzy" : {
+    "category" : "Tech",
+    "definition" : "An absolute staple in the web development world, Git is a version control system where developers can store and manage their code. As a web developer, you’ll make constant changes to your code whenever you’re in the process of creating something, be it an app or a website. Git enables you to track these changes and reverse them if necessary, and also to work together with other teams and manage multiple projects at once.",
+    "firebaseKey" : "-MjRfyelJTlOSKnShyzy",
+    "time" : "9/12/2021 @ 08:05 PM",
+    "title" : "Git",
+    "uid" : "3Pex9U2lzjfFWSkFXq1BPI6YoIf2",
+    "utcTime" : 1631495122507
+  },
+  "-MjRg2_Er7ZMfyZhE0rz" : {
+    "category" : "Tech",
+    "definition" : "GitHub is a cloud interface for Git. It has been around since 2008 and now has over 28 million users worldwide, making it the largest host of source code in the world! GitHub offers all the version control functionality of Git, but also offers its own features, such as bug tracking, task management and project wikis.",
+    "firebaseKey" : "-MjRg2_Er7ZMfyZhE0rz",
+    "time" : "9/12/2021 @ 08:05 PM",
+    "title" : "GitHub",
+    "uid" : "3Pex9U2lzjfFWSkFXq1BPI6YoIf2",
+    "utcTime" : 1631495142634
+  },
+  "-MjRgLeatOtItme03HGz" : {
+    "category" : "Javascript",
+    "definition" : "JavaScript is primarily used as a client-side language, meaning that it is embedded into the HTML of a page and sent to the browser. Web developers use JavaScript to add automation, animations and interactivity to web pages.",
+    "firebaseKey" : "-MjRgLeatOtItme03HGz",
+    "time" : "9/12/2021 @ 08:07 PM",
+    "title" : "Javascript",
+    "uid" : "3Pex9U2lzjfFWSkFXq1BPI6YoIf2",
+    "utcTime" : 1631495220804
+  },
+  "-MjRgT5HKJnCUm_I7The" : {
+    "category" : "Javascript",
+    "definition" : "Remember JavaScript? Well jQuery is a JavaScript library (we’ll go into libraries further down the glossary). jQuery basically simplifies the task of using JavaScript on your website by condensing several lines of JavaScript code into a single line. Rather than adding many lines of JavaScript code, the developer can simply take the “compact version” from the jQuery library.",
+    "firebaseKey" : "-MjRgT5HKJnCUm_I7The",
+    "time" : "9/12/2021 @ 08:07 PM",
+    "title" : "jQuery",
+    "uid" : "3Pex9U2lzjfFWSkFXq1BPI6YoIf2",
+    "utcTime" : 1631495251245
+  },
+  "-MjRgaCtpbSuHmx_Q_EQ" : {
+    "category" : "Tech",
+    "definition" : "It’s crucial not to get your sports buzzwords and your web development buzzwords mixed up. Programmers might often hear talk of “MVP”—or minimum viable product. The minimum viable product is the most pared-down version of a product that can be released to market. When adopting an MVP approach, developers will first focus on the core features and functions that are absolutely crucial. Then, once the product has been released and user feedback has been gathered, they will continue to build the complete set of features.",
+    "firebaseKey" : "-MjRgaCtpbSuHmx_Q_EQ",
+    "time" : "9/12/2021 @ 08:08 PM",
+    "title" : "MVP",
+    "uid" : "3Pex9U2lzjfFWSkFXq1BPI6YoIf2",
+    "utcTime" : 1631495283786
+  },
+  "-MjRgjntLnM2uifrlh1G" : {
+    "category" : "Tech",
+    "definition" : "Wireframes help designers to communicate to web developers how a website should be structured. A wireframe is essentially a bare-bones blueprint of the website, showing the page layout, how the content should be arranged, which interface elements and navigational systems should be included, and how all these components work together. The focus is on functionality rather than aesthetics.",
+    "firebaseKey" : "-MjRgjntLnM2uifrlh1G",
+    "time" : "9/12/2021 @ 08:08 PM",
+    "title" : "Wireframe",
+    "uid" : "3Pex9U2lzjfFWSkFXq1BPI6YoIf2",
+    "utcTime" : 1631495323798
   }
 }

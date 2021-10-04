@@ -44,9 +44,9 @@ body {
     margin-bottom: 20px;
   
     #filter--CSS,
-    #filter--Firebase,
     #filter--HTML,
-    #filter--Javascript {
+    #filter--Javascript,
+    #filter--Tech {
       margin: 20px 24px;
       width: 150px;
     }
@@ -73,6 +73,10 @@ body {
     #time {
       font-size: 12px;
       margin-top: 10px;
+    }
+
+    #empty {
+      color: white;
     }
   }
 }

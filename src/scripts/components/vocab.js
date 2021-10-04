@@ -1,7 +1,7 @@
 import clearDom from '../helpers/data/clearDom';
 
 const emptyVocab = () => {
-  document.querySelector('#vocab-container').innerHTML = '<h1>No Vocab Entries</h1>';
+  document.querySelector('#vocab-container').innerHTML = '<h1 id="empty">No Vocab Entries</h1>';
 };
 
 const showVocab = (array) => {
@@ -10,9 +10,9 @@ const showVocab = (array) => {
   // FILTER BUTTONS
   document.querySelector('#filter-container').innerHTML = `
     <button type="button" class="btn btn-primary" id="filter--CSS">CSS</button>
-    <button type="button" class="btn btn-primary" id="filter--Firebase">Firebase</button>
     <button type="button" class="btn btn-primary" id="filter--HTML">HTML</button>
     <button type="button" class="btn btn-primary" id="filter--Javascript">Javascript</button>
+    <button type="button" class="btn btn-primary" id="filter--Tech">Tech</button>
   `;
 
   document.querySelector('#sort').innerHTML = `
