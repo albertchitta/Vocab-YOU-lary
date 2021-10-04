@@ -18,9 +18,9 @@ const addVocabForm = (obj = {}) => {
         <select class="form-control form-select" id="category" required>
           <option value="" disabled selected>${obj.category || 'Select a category'}</option>
           <option value="CSS">CSS</option>
-          <option value="Firebase">Firebase</option>
           <option value="HTML">HTML</option>
           <option value="Javascript">Javascript</option>
+          <option value="Tech">Tech</option>
         </select>
       </div>
       <button type="submit"

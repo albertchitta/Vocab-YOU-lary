@@ -1,85 +1,50 @@
-# vocab-YOU-lary
+# Vocab-YOU-lary  [![Netlify Status](https://api.netlify.com/api/v1/badges/6abe16dc-e322-4e5c-9608-e0b1f9df9495/deploy-status)](https://app.netlify.com/sites/awc-vocab-you-lary/deploys)
+<!-- update the netlify badge above with your own badge that you can find at netlify under settings/general#status-badges -->
 
-In this student assessment, you will be creating an application that allows users to CRUD vocabulary cards, authenticate with Google, and filter.
+An application that allows users to Create, Read, Update, and Delete (CRUD) vocabulary cards, authenticate with Google, and filter.
 
-## Learning Objectives
-- Single Responsibility Principle (each component/function should have one job)
-- Import/Export modules
-- DOM manipulation with Vanilla JS
-- DOM querying with Vanilla JS
-- Representing data as HTML
-- Usage of semantic HTML5 tags
-- Asynchronous Programming
-- Promises 
+[View App](awc-vocab-you-lary.netlify.app)
 
-## REMINDER
-This is NOT A TEST. We are not looking for 100% completion, although if you can make it work completely, then wahoo!
+## Get Started <!-- OPTIONAL, but doesn't hurt -->
+```
+$ git clone git@github.com:albertchitta/Vocab-YOU-lary.git
+$ cd Vocab-YOU-lary
+```
+## About the User <!-- This is a scaled down user persona -->
+- This site is for users who want to create vocabulary cards that can be edited and filtered to meet their needs.
 
-What we are looking for is effort, critical thinking about the concepts, creative thinking to bind the concepts together for a solution, and collaboration with your teammates and instruction team.
+## Features <!-- List your app features using bullets! Do NOT use a paragraph. No one will read that! -->
+- Login and Logout of the application
+- CREATE a vocabulary entry
+- READ entries
+- UPDATE entries
+- DELETE entries
+- Filter by language/tech
 
-If you only get 50% of it complete, but display the above Core Skills and can demonstrate understanding of the fundamental code concepts, then you are learning and growing - which is what we care about.
+## Video Walkthrough of Vocab-YOU-lary <!-- A loom link is sufficient -->
 
-## Tools To Use:
-- Postman for API testing
-- Firebase for database, rules, and authentication
-- Webpack template (Located in your cohort repo)
-- dbdiagram.io for creating your ERD
-- Figma, google slides, or paper for flow charting your application
-- Axios for requests
 
-Make sure your Developer Tools are open at all times while working on this project. Use the messages provided in the Console to determine what code needs to be fixed or implemented, and use breakpoints in the Sources tab to step through your code as you debug.
+## Relevant Links <!-- Link to all the things that are required outside of the ones that have their own section -->
+- [Check out the deployed site](awc-vocab-you-lary.netlify.app)
+- [Wireframes](https://docs.google.com/presentation/d/1n0copTpsUgVgfl76Ksdov2ZPOiLvGTFxmLuiEpDAE5E/edit#slide=id.p)
+- [Project Board](https://github.com/albertchitta/Vocab-YOU-lary/projects/1)
 
-## Get Started
-Use the checkboxes next to each item to keep track of what you have completed.
-- [ ] Setup your firebase project and create the `.env` file with your keys. (Reference the Firebase videos in CodeTracker if you need help getting started)
-- [ ] Plan your project. Take no more than an hour to plan (ERD, Flow Chart, Postman)
-- [ ] Use the webpack template to create the project on your github account
-- [ ] Make sure you are in your `workspace/foundations/exercises` directory
-- [ ] `git clone YOUR_GITHUB_REPO_LINK`
-- [ ] `cd` into the directory
-- [ ] Run `npm install` to install your dependencies
-- [ ] Type `code .` to open the project in VS Code
-- [ ] `npm start` to start your server
-- [ ] START CODING!
+## Code Snippet <!-- OPTIONAL, but doesn't hurt -->
+This functions uses a promise to filter the vocabulary cards by category.
+```
+// GET FILTERED VOCAB
+const getFilteredVocab = (userId, category) => new Promise((resolve, reject) => {
+  getVocab(userId)
+    .then((filteredVocabArray) => {
+      const filteredVocab = filteredVocabArray.filter((vocab) => vocab.category === category);
+      resolve(filteredVocab);
+    }).catch(reject);
+});
+```
 
-# MVP Requirements
-[MVP Wireframe](https://www.figma.com/file/IW4jF3GnzCFLYbEXlgFNIZ/MVP)
-- [ ] An ERD of your data
-- [ ] Use Firebase for DB and authentication
-- [ ] Technical Flow chart (timebox this)
-- [ ] The app has a navigation bar
-  - [ ] A logo
-  - [ ] Logout button
-  - [ ] Create Entry
-  - [ ] Any other options you would like to add
+## Project Screenshots <!-- These can be inside of your project. Look at the repos from class and see how the images are included in the readme -->
+![Bear_Watcher_Overview](https://user-images.githubusercontent.com/83558122/132269631-32e3bf2f-ca14-4c15-b97b-efc7c2b86306.PNG)
+![Bear_Watcher_River](https://user-images.githubusercontent.com/83558122/132269658-d1a57fad-ea85-4f96-a429-2d6676e50447.PNG)
 
-**The most basic requirement for this project is that a user can:**
-- [ ] Login and Logout of the application
-- [ ] CREATE a vocabulary entry:
-  - [ ] Title
-  - [ ] Definition
-  - [ ] Language/Tech
-  - [ ] Time submitted - Not on form. Handle in your JS
-  - [ ] user ID - Not on form. Pull from User object.
-- [ ] READ entries
-- [ ] UPDATE entries
-- [ ] DELETE entries
-- [ ] Filter by language/tech
-- [ ] Style your application using your own creativity!
-
-## Stretch 1
-[Stretch 1 Wireframe](https://www.figma.com/file/UC3Gi8HFRkZY8OIMOAUgL4/Stretch-1)
-- [ ] Allow users to order entries alphabetically, newest, oldest
-
-## Stretch 2
-[Stretch 2 Wireframe](https://www.figma.com/file/UC3Gi8HFRkZY8OIMOAUgL4/Stretch-2)
-- [ ] Users can search vocabulary entries
-- [ ] Users can only see the vocabulary entries that they created
-- [ ] Users can add Language/Tech to the database and refrerence it on their vocabulary entries
-- [ ] Users can only see the Languages/Tech categories that they created
-
-## Stretch 3
-[Stretch 3 Wireframe](https://www.figma.com/file/KgbkfaoRd5F8Q4qZ3G2Bg2/Stretch-3)
-- [ ] Users can mark an entry as public or private
-- [ ] If an entry is public, anyone can view it. If it is private, only the user who created it can see it
-- [ ] If an entry is public, any user can copy the entry to their own set of entries and then CRUD on the new/copied entry
+## Contributors
+- [Albert Chittaphong](https://github.com/albertchitta)
