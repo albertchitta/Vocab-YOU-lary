@@ -3,7 +3,7 @@
 
 An application that allows users to Create, Read, Update, and Delete (CRUD) vocabulary cards, authenticate with Google, and filter.
 
-[View App](awc-vocab-you-lary.netlify.app)
+[View App](https://awc-vocab-you-lary.netlify.app)
 
 ## Get Started <!-- OPTIONAL, but doesn't hurt -->
 ```
@@ -25,7 +25,7 @@ $ cd Vocab-YOU-lary
 
 
 ## Relevant Links <!-- Link to all the things that are required outside of the ones that have their own section -->
-- [Check out the deployed site](awc-vocab-you-lary.netlify.app)
+- [Check out the deployed site](https://awc-vocab-you-lary.netlify.app)
 - [Wireframes](https://docs.google.com/presentation/d/1n0copTpsUgVgfl76Ksdov2ZPOiLvGTFxmLuiEpDAE5E/edit#slide=id.p)
 - [Project Board](https://github.com/albertchitta/Vocab-YOU-lary/projects/1)
 
