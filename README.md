@@ -27,10 +27,11 @@ $ cd Vocab-YOU-lary
 ## Relevant Links <!-- Link to all the things that are required outside of the ones that have their own section -->
 - [Check out the deployed site](https://awc-vocab-you-lary.netlify.app)
 - [Wireframes](https://docs.google.com/presentation/d/1n0copTpsUgVgfl76Ksdov2ZPOiLvGTFxmLuiEpDAE5E/edit#slide=id.p)
+- [ERD] (https://dbdiagram.io/d/6137f80e825b5b0146f79e9b)
 - [Project Board](https://github.com/albertchitta/Vocab-YOU-lary/projects/1)
 
 ## Code Snippet <!-- OPTIONAL, but doesn't hurt -->
-This functions uses a promise to filter the vocabulary cards by category.
+This function uses a promise to filter the vocabulary cards by category.
 ```
 // GET FILTERED VOCAB
 const getFilteredVocab = (userId, category) => new Promise((resolve, reject) => {
