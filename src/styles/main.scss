@@ -16,6 +16,18 @@ body {
   }
 }
 
+.navbar {
+  display: flex;
+
+  .space {
+    flex: 2 !important;
+  }
+
+  #logout-button {
+    margin-left: 64px;
+  }
+}
+
 #create-entry {
   font-size: 24px;
 }
@@ -68,6 +80,10 @@ body {
     .card {
       width: 300px;
       margin: 20px;
+    }
+
+    .card-text {
+      height: 400px;
     }
 
     #time {

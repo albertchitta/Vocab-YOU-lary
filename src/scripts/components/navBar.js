@@ -10,6 +10,7 @@ const navBar = () => {
           <a id="create-entry" class="nav-link" href="#">Create Entry</a>
         </li>
         </ul>
+        <div class="space"></div>
         <form class="d-flex">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchBar">
           <button class="btn btn-outline-success" type="submit" id="search-btn">Search</button>
