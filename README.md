@@ -22,12 +22,12 @@ $ cd Vocab-YOU-lary
 - Filter by language/tech
 
 ## Video Walkthrough of Vocab-YOU-lary <!-- A loom link is sufficient -->
-
+https://www.loom.com/share/6a192ddbd51d4b2ca6433a3c9a430467
 
 ## Relevant Links <!-- Link to all the things that are required outside of the ones that have their own section -->
 - [Check out the deployed site](https://awc-vocab-you-lary.netlify.app)
 - [Wireframes](https://docs.google.com/presentation/d/1n0copTpsUgVgfl76Ksdov2ZPOiLvGTFxmLuiEpDAE5E/edit#slide=id.p)
-- [ERD] (https://dbdiagram.io/d/6137f80e825b5b0146f79e9b)
+- [ERD](https://dbdiagram.io/d/6137f80e825b5b0146f79e9b)
 - [Project Board](https://github.com/albertchitta/Vocab-YOU-lary/projects/1)
 
 ## Code Snippet <!-- OPTIONAL, but doesn't hurt -->
@@ -44,8 +44,8 @@ const getFilteredVocab = (userId, category) => new Promise((resolve, reject) => 
 ```
 
 ## Project Screenshots <!-- These can be inside of your project. Look at the repos from class and see how the images are included in the readme -->
-![Bear_Watcher_Overview](https://user-images.githubusercontent.com/83558122/132269631-32e3bf2f-ca14-4c15-b97b-efc7c2b86306.PNG)
-![Bear_Watcher_River](https://user-images.githubusercontent.com/83558122/132269658-d1a57fad-ea85-4f96-a429-2d6676e50447.PNG)
+![Home](https://user-images.githubusercontent.com/83558122/138629954-30d661ae-3840-428a-a879-d1c8f959e049.PNG)
+![New_Vocab](https://user-images.githubusercontent.com/83558122/138629971-401e955b-f40f-42fe-8bd9-77608b0e5145.PNG)
 
 ## Contributors
 - [Albert Chittaphong](https://github.com/albertchitta)
